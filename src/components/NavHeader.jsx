@@ -1,10 +1,11 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import { Button, Input, Select, Space } from 'antd'
+import { Input, Select, Space } from 'antd'
+import LoginAvatar from './LoginAvatar'
 
 const { Search } = Input
 
-export default function PageHeader() {
+export default function PageHeader(props) {
   return (
     <div className='headerContainer'>
       {/* 头部 */}
@@ -16,7 +17,7 @@ export default function PageHeader() {
         <NavLink to='/issues' className='navigation'>问答</NavLink>
         <NavLink to='/books' className='navigation'>书籍</NavLink>
         <NavLink to='/interviews' className='navigation'>面试题</NavLink>
-        <a href='https://www.baidu.com' className='navigation' target='_blank'>视频教程</a>
+        <a href='https://onlyprobie.github.io' className='navigation' target='_blank'>博客</a>
       </nav>
       {/* 搜索 */}
       <div className="searchContainer">
@@ -29,17 +30,17 @@ export default function PageHeader() {
               { value: '面试题', label: '面试题' }
             ]}
           />
-          <Search 
-            placeholder="请输入要搜索的内容……"
+          <Search
+            placeholder="请输入要搜索的内容…"
             allowClear
             enterButton="搜索"
             size="large"
           />
         </Space.Compact>
       </div>
-      {/* 登录按钮 */}
+      {/* 登录按钮/用户头像 */}
       <div className="loginBtnContainer">
-        <Button type='primary' size='large'>注册/登录</Button>
+        <LoginAvatar loginHandle={props.loginHandle} />
       </div>
     </div>
   )
