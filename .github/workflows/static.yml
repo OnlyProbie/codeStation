@@ -51,8 +51,7 @@ jobs:
         uses: actions/upload-pages-artifact@v1
         with:
           name: github-pages
-          path: ./dist
-
+          path: ./build
       # deploy
       - name: Deploy Page To Release
         id: deployment
