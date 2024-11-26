@@ -15,7 +15,8 @@ const uploadJsonSlice = createSlice({
         return {
           url: item.args?.data?.url.split('?')[0],
           name: item.name,
-          ts: (item.ts - filterData[0].ts) / 1000,
+          ts: ((item.ts - filterData[0].ts) / 1000 / 1000).toFixed(5),
+          dur: item.dur / 1000,
           tid: item.tid
         }
       })

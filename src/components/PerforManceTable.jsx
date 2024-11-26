@@ -157,8 +157,14 @@ const App = () => {
       ...getColumnSearchProps('name'),
     },
     {
-      title: '耗时(毫秒)',
+      title: '时间戳(s)',
       dataIndex: 'ts',
+      width: '20%',
+      key: 'ts',
+    },
+    {
+      title: '耗时(s)',
+      dataIndex: 'dur',
       width: '20%',
       key: 'ts',
     },
