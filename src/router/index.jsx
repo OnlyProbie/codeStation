@@ -9,7 +9,7 @@ export default function RoutesConfig () {
             <Route path='/issues' element={<Issues />} />
             <Route path='/books' element={<Books />} />
             <Route path='/interviews' element={<InterViews />} />
-            <Route path='/' element={<Navigate replace to='/issues' />} />
+            <Route path='/' element={<Navigate replace to='/books' />} />
         </Routes>
     )
 }

@@ -29,7 +29,7 @@ function App() {
         <RoutesConfig />
       </Content>
       <Footer className='footer'>
-        <PageFooter />
+        {/* <PageFooter /> */}
       </Footer>
       {/* 登录注册弹窗 */}
       <LoginForm isShow={showLoginModal} closeModal={closeModal} />

@@ -14,13 +14,13 @@ export default function PageHeader(props) {
       </div>
       {/* 头部导航 */}
       <nav className="navContainer">
-        <NavLink to='/issues' className='navigation'>问答</NavLink>
-        <NavLink to='/books' className='navigation'>书籍</NavLink>
-        <NavLink to='/interviews' className='navigation'>面试题</NavLink>
-        <a href='https://onlyprobie.github.io' className='navigation' target='_blank'>博客</a>
+        {/* <NavLink to='/issues' className='navigation'>问答</NavLink> */}
+        {/* <NavLink to='/books' className='navigation'>书籍</NavLink> */}
+        {/* <NavLink to='/interviews' className='navigation'>面试题</NavLink> */}
+        {/* <a href='https://onlyprobie.github.io' className='navigation' target='_blank'>博客</a> */}
       </nav>
       {/* 搜索 */}
-      <div className="searchContainer">
+      {/* <div className="searchContainer">
         <Space.Compact>
           <Select
             defaultValue="问答"
@@ -37,11 +37,11 @@ export default function PageHeader(props) {
             size="large"
           />
         </Space.Compact>
-      </div>
+      </div> */}
       {/* 登录按钮/用户头像 */}
-      <div className="loginBtnContainer">
+      {/* <div className="loginBtnContainer">
         <LoginAvatar loginHandle={props.loginHandle} />
-      </div>
+      </div> */}
     </div>
   )
 }
