@@ -10,7 +10,7 @@ export default function PageHeader(props) {
     <div className='headerContainer'>
       {/* 头部 */}
       <div className="logoContainer">
-        <div className="logo"></div>
+        <NavLink to='/' className="logo"></NavLink>
       </div>
       {/* 头部导航 */}
       <nav className="navContainer">
