@@ -14,7 +14,7 @@ export default function PageHeader(props) {
       </div>
       {/* 头部导航 */}
       <nav className="navContainer">
-        {/* <NavLink to='/issues' className='navigation'>问答</NavLink> */}
+        <NavLink to='/issues' className='navigation'>问答</NavLink>
         {/* <NavLink to='/books' className='navigation'>书籍</NavLink> */}
         {/* <NavLink to='/interviews' className='navigation'>面试题</NavLink> */}
         {/* <a href='https://onlyprobie.github.io' className='navigation' target='_blank'>博客</a> */}
